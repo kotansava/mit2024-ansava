@@ -7,6 +7,9 @@ def fib(n):
         return 1
     return fib(n - 1) + fib(n - 2)
 
+def cycle_fib(n):
+    for i in range(n+1):
+        print(fib(i))
 
-print(fib(10))
 
+cycle_fib(10)
